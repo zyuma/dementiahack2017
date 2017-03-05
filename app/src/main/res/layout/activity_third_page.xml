@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lc.dementiahack.ui.signup.FirstPageActivity">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="I would like to talk to people caring for ..."
+        android:id="@+id/textView" />
+
+
+    <Button
+        android:id="@+id/first"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="All Dementia"/>
+
+    <Button
+        android:id="@+id/second"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Alzheimer's Disease"
+        android:layout_below="@+id/first" />
+
+    <Button
+        android:id="@+id/third"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Dementia with Lewy Bodies"
+        android:layout_below="@+id/second" />
+
+    <Button
+        android:id="@+id/fourth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Frontotemporal Dementia"
+        android:layout_below="@+id/third" />
+
+    <Button
+        android:id="@+id/fifth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Vascular Dementia"
+        android:layout_below="@+id/fourth" />
+
+    <Button
+        android:id="@+id/six"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Parkinson's Disease Dementia"
+        android:layout_below="@+id/fifth" />
+
+    <TextView
+        android:id="@+id/previous"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="16dp"
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous" />
+
+</RelativeLayout>

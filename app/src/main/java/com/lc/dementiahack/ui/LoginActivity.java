@@ -10,34 +10,44 @@ import com.lc.dementiahack.core.CoreActivity;
 
 public class LoginActivity extends CoreActivity {
 
-    private Button mLogin;
+//    private Button mLogin;
     private Button mSignUp;
+    private Button mFacebook;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        mLogin = (Button) findViewById(R.id.login);
+//        mLogin = (Button) findViewById(R.id.login);
         mSignUp = (Button) findViewById(R.id.signup);
+        mFacebook = (Button) findViewById(R.id.facebook_signup);
 
         setButtons();
     }
 
     public void setButtons(){
 
-        mLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
+//        mLogin.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
         mSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mFacebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, FacebookSignUp.class);
                 startActivity(intent);
             }
         });

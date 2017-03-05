@@ -1,3 +1,7 @@
+repositories {
+    mavenCentral()
+}
+
 apply plugin: 'com.android.application'
 
 android {
@@ -27,7 +31,7 @@ dependencies {
     })
 
 
-
+    compile 'com.github.paolorotolo:appintro:4.1.0'
     compile 'com.android.support:appcompat-v7:25.2.0'
     compile 'com.android.support:design:25.2.0'
     compile 'com.android.support:support-vector-drawable:25.2.0'

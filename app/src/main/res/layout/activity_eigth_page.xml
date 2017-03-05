@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lc.dementiahack.ui.signup.EigthPageActivity">
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="I have experience in dealing with complex situations"
+        android:textAlignment="center"
+        android:textSize="16dp"/>
+
+    <Button
+        android:id="@+id/yes"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"/>
+
+    <Button
+        android:id="@+id/no"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"/>
+
+    <TextView
+        android:textSize="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="(i) This may include but not limited to agitation, aggression, comorbidities, delusions, hallucinations, wandering, depression, apathy, disinhibition, and sleep disturbances"
+        android:textAlignment="center" />
+
+</LinearLayout>

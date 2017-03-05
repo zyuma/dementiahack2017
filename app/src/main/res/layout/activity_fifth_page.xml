@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lc.dementiahack.ui.signup.FirstPageActivity">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="I can assist with ..."
+        android:id="@+id/textView" />
+
+
+    <Button
+        android:id="@+id/first"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Emotional Support"/>
+
+    <Button
+        android:id="@+id/second"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Transportation"
+        android:layout_below="@+id/first" />
+
+    <Button
+        android:id="@+id/third"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Community Activities"
+        android:layout_below="@+id/second" />
+
+    <Button
+        android:id="@+id/fourth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Walking Partner"
+        android:layout_below="@+id/third" />
+
+    <Button
+        android:id="@+id/fifth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Household Chores"
+        android:layout_below="@+id/fourth" />
+
+</RelativeLayout>

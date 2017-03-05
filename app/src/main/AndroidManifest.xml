@@ -20,13 +20,23 @@
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".ui.SignUpActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".ui.ListActivity"></activity>
+        <activity android:name=".ui.ListActivity" />
+        <activity android:name=".ui.FacebookSignUp" />
+        <activity android:name=".ui.signup.PageOne" />
+        <activity android:name=".ui.signup.FirstPageActivity" />
+        <activity android:name=".ui.signup.SecondPageActivity" />
+        <activity android:name=".ui.signup.ThirdPageActivity" />
+        <activity android:name=".ui.signup.FourthPageActivity" />
+        <activity android:name=".ui.signup.FifthPageActivity" />
+        <activity android:name=".ui.signup.SevenPageActivity" />
+        <activity android:name=".ui.signup.EigthPageActivity"></activity>
     </application>
 
 </manifest>

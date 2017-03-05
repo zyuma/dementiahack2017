@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lc.dementiahack.ui.signup.FirstPageActivity">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="I am related to Aaron Davis as ..."
+        android:id="@+id/textView" />
+
+
+    <Button
+        android:id="@+id/familymember"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Family Member"/>
+
+    <Button
+        android:id="@+id/friend"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Friend"
+        android:layout_below="@+id/familymember" />
+
+    <Button
+        android:id="@+id/other"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Other"
+        android:layout_below="@+id/friend" />
+
+    <Button
+        android:id="@+id/notdisclose"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Do not disclose"
+        android:layout_below="@+id/other" />
+
+    <TextView
+        android:id="@+id/previous"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="16dp"
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous" />
+
+</RelativeLayout>
