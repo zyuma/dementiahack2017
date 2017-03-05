@@ -11,8 +11,9 @@ import android.widget.TextView;
 
 import com.lc.dementiahack.R;
 import com.lc.dementiahack.core.CoreActivity;
+import com.lc.dementiahack.ui.frags.HomeFragment;
 import com.lc.dementiahack.ui.frags.MessageFragment;
-import com.lc.dementiahack.ui.frags.PostFragment;
+import com.lc.dementiahack.ui.frags.FriendlyFragment;
 import com.lc.dementiahack.ui.frags.ProfileFragment;
 
 public class MainActivity extends CoreActivity {
@@ -20,7 +21,8 @@ public class MainActivity extends CoreActivity {
     private TextView mTextMessage;
 
     final FragmentManager fragmentManager = getSupportFragmentManager();
-    final Fragment mPostFragment = new PostFragment();
+    final Fragment mHomeFragment = new HomeFragment();
+    final Fragment mFriendlyFragment = new FriendlyFragment();
     final Fragment mMessageFragment = new MessageFragment();
     final Fragment mProfileFragment = new ProfileFragment();
 
@@ -31,7 +33,10 @@ public class MainActivity extends CoreActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    replaceFragment(mPostFragment);
+                    replaceFragment(mHomeFragment);
+                    return true;
+                case R.id.navigation_friendly:
+                    replaceFragment(mFriendlyFragment);
                     return true;
                 case R.id.navigation_dashboard:
                     replaceFragment(mMessageFragment);
@@ -52,7 +57,7 @@ public class MainActivity extends CoreActivity {
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-        replaceFragment(mPostFragment);
+        replaceFragment(mHomeFragment);
     }
 
     private void replaceFragment(Fragment fragment) {
